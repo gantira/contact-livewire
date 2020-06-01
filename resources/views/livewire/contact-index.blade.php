@@ -1,8 +1,14 @@
 <div>
+    @if(session()->has('message'))
+        <div class="alert alert-success">
+            {{ session('message') }}
+        </div>
+    @endif
+
     <livewire:contact-create></livewire:contact-create>
 
     <hr>
-    
+
     <table class="table">
         <thead class="thead-dark">
             <tr>
