@@ -29,7 +29,7 @@
                 <td>{{ $row->phone }}</td>
                 <td>
                     <button wire:click="getContact({{ $row->id }})" class="btn btn-sm btn-info text-white">Edit</button>
-                    <button class="btn btn-sm btn-danger text-white">Delete</button>
+                    <button wire:click="destroy({{ $row->id }})" class="btn btn-sm btn-danger text-white">Delete</button>
                 </td>
             </tr>
             @endforeach
